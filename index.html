@@ -2,34 +2,55 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Web Dashboard</title>
-	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="container">
-	<div class="gird-row">
-		<header class="">
-			<div class="logo">YourApp</div>
-			<div class="notification"></div>
-			<div class="profile"></div>
-		</header>
-	</div>
-	<div class="grid-row">
-		<nav class='nav-bar'>
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
-		</nav>
-	</div>
-	<div class="grid-row">
-		<canvas id="myChart" width="300" height="100"></canvas>
-		<canvas id="barChart" width="400" height="400"></canvas>
-	</div>
-	
+		
+		<!-- <div class="grid-row">
+			<header class="header">
+				<div class="logo">YourApp</div>
+				<div class="notification"></div>
+				<div class="profile"></div>
+			</header></div> -->
+		
+			<div class="dashboard-wrapper">
+				<div class="nav-bar">
+					<nav>
+						<h1>Nav</h1>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="dashboard">
+					<h1>Dashboard</h1>
+					<div class="grid-row">
+						<div class='col--12 dash--traffic'>Traffic</div>
+					</div>
+					<div class="grid-row">
+						<div class='col--6 dash--dailytraffic'>Daily</div>
+						<div class='col--6 dash--mobileuserss'>Mobile</div>
+					</div>
+					<div class="grid-row">
+						<div class='col--12 dash--socialstats'>Social</div>
+					</div>
+					<div class="grid-row">
+						<div class="col--6">New Members</div>
+						<div class="col--6">Recent Activity</div>
+					</div>
+						<div class="grid-row">
+						<div class="col--6">Message User</div>
+						<div class="col--6">Settings</div>
+					</div>
 
-	</div>
+
+				</div></div>
+		</div>
 
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>

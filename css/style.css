@@ -1,4 +1,45 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: auto; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+
 .grid-row {
   display: flex;
   flex-direction: row;
   width: 100%; }
+
+.col--12 {
+  width: 100%;
+  border: solid 1px blue;
+  height: 200px; }
+
+.col--6 {
+  width: 50%;
+  border: solid 1px red;
+  height: 200px; }
+
+.header {
+  height: 50px;
+  width: 100%;
+  background-color: #7477BF; }
+
+.dashboard-wrapper {
+  display: flex;
+  flex-direction: row; }
+
+.nav-bar {
+  display: flex;
+  flex-directon: column;
+  width: 75px;
+  height: 1200px;
+  background-color: #4D4C72;
+  overflow: hidden; }
+
+.dashboard {
+  flex-grow: 2;
+  height: 100%; }
