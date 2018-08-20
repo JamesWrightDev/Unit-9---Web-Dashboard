@@ -1,0 +1,15 @@
+{
+  "name": "webdashboard",
+  "version": "1.0.0",
+  "description": "TeamTreehouse Unit 9",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "author": "James Wright",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
