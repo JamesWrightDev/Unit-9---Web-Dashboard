@@ -20,9 +20,8 @@ html, body {
 .grid-row{
 	display: flex;
 	flex-direction: row;
-	width: 100%;
-	
-
+	flex-wrap: wrap;
+	margin-top: 2px;
 }
 
 .col--12{
@@ -31,24 +30,32 @@ html, body {
 	height: 200px
 }
 .col--6{
-	width: 50%;
+	width: 100%;
 	border: solid 1px red;
 	height: 200px
+	margin-top: 2px;
 
 }
 
+@media (min-width: 900px){
+	.col--6{
+		width: 49.5%;
+	}
+}
 
 // Header
 .header{
-	height: 50px;
+	height: 70px;
 	width: 100%;
 	background-color: $secondary-color;
+	position: fixed;
 }
 
 
 .dashboard-wrapper{
 	display: flex;
 	flex-direction: row;
+	margin-top: 70px;
 	
 }
 
@@ -60,11 +67,29 @@ html, body {
 	height: 1200px;
 	background-color:$primary-color;
 	overflow: hidden;
-
+	justify-content: center;
 }
+nav{
+	width: 100%;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.small-icon{
+	width: 30px;
+	margin: 40px auto;
+	display: block;
+}
+
+
 
 .dashboard{
 	flex-grow: 2;
 	height: 100%;
 }
+
+
 
