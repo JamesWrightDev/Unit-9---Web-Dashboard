@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,500");
+* {
+  font-family: Roboto, Arial;
+  font-weight: 500;
+  color: #595959; }
+
 html, body {
   margin: 0;
   height: 100%;
@@ -11,34 +17,31 @@ html, body {
 .grid-row {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  margin-top: 2px; }
+  flex-wrap: wrap; }
 
 .col--12 {
   width: 100%;
-  border: solid 1px blue;
+  border-bottom: solid 1px #a6a6a6;
   height: 200px; }
 
 .col--6 {
   width: 100%;
-  border: solid 1px red;
+  border-bottom: solid 1px #a6a6a6;
+  border-right: solid 1px #a6a6a6;
   height: 200px; }
 
 @media (min-width: 900px) {
   .col--6 {
-    width: 49.5%;
-    margin-top: 2px; } }
+    width: 49.5%; } }
 
 .header {
-  height: 70px;
+  height: 100px;
   width: 100%;
-  background-color: #7477BF;
-  position: fixed; }
+  background-color: #7477BF; }
 
 .dashboard-wrapper {
   display: flex;
-  flex-direction: row;
-  margin-top: 70px; }
+  flex-direction: row; }
 
 .nav-bar {
   display: flex;

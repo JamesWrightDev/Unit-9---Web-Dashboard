@@ -2,6 +2,32 @@
 
 $primary-color: #4D4C72;
 $secondary-color: #7477BF;
+;
+
+
+$lime: #b0eb00;
+$bright-red: #b30015;
+$dark-blue: #2a00b3;
+$deep-cerulean: #0077b3;
+$bondi-blue: #00b0b3;
+$cyan: #24fbff;
+$heliotrope: #8a7dff;
+$silver-chalice: #a6a6a6;
+$scorpion: #595959;
+$tundora: #444;
+$mine-shaft: #363636;
+$cod-gray: #111;
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500');
+$font-regular: 500;
+$font-thin: 300;
+
+*{
+	font-family: Roboto, Arial;
+	font-weight: $font-regular;
+	color: $scorpion;
+}
 
 html, body {
     margin: 0;
@@ -21,19 +47,19 @@ html, body {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	margin-top: 2px;
+
 }
 
 .col--12{
 	width: 100%;
-	border: solid 1px blue;
+	border-bottom: solid 1px $silver-chalice;
 	height: 200px
 }
 .col--6{
 	width: 100%;
-	border: solid 1px red;
-	height: 200px
-	margin-top: 2px;
+	border-bottom: solid 1px $silver-chalice;
+	border-right: solid 1px $silver-chalice;
+	height: 200px;
 
 }
 
@@ -45,17 +71,17 @@ html, body {
 
 // Header
 .header{
-	height: 70px;
+	height: 100px;
 	width: 100%;
 	background-color: $secondary-color;
-	position: fixed;
+
 }
 
 
 .dashboard-wrapper{
 	display: flex;
 	flex-direction: row;
-	margin-top: 70px;
+
 	
 }
 
