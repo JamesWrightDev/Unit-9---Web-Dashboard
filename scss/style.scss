@@ -2,7 +2,7 @@
 
 $primary-color: #4D4C72;
 $secondary-color: #7477BF;
-;
+$highlight-green: #88D883;
 
 
 $lime: #b0eb00;
@@ -33,6 +33,7 @@ html, body {
     margin: 0;
     height: 100%;
     overflow: auto;
+    background-color: $primary-color;
 
 }
 
@@ -53,7 +54,7 @@ html, body {
 .col--12{
 	width: 100%;
 	border-bottom: solid 1px $silver-chalice;
-	height: 200px
+	
 }
 .col--6{
 	width: 100%;
@@ -71,18 +72,55 @@ html, body {
 
 // Header
 .header{
-	height: 100px;
+	min-height: 80px;
 	width: 100%;
 	background-color: $secondary-color;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.profile-menu{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.profile-menu p{
+	color: white;
+	font-weight: $font-thin;
+
 
 }
 
+.profile-menu{
+	marign: 0 15px;
+}
+
+.header-notification{
+	width: 25px;
+	margin: 0 20px;
+	padding-right: 10px;
+	border-right: 1px solid black;
+}
+
+.img-avatar{
+	width: 40px;
+	border-radius: 50%;
+}
+
+
+
+
+
+
+
+// 
 
 .dashboard-wrapper{
 	display: flex;
 	flex-direction: row;
-
-	
 }
 
 // Nav Bar
@@ -90,32 +128,86 @@ html, body {
 	display: flex;
 	flex-directon: column;
 	width: 75px;
-	height: 1200px;
 	background-color:$primary-color;
 	overflow: hidden;
 	justify-content: center;
 }
 nav{
 	width: 100%;
+
 }
 ul{
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	margin-top: 10px;
 }
 
-.small-icon{
-	width: 30px;
-	margin: 40px auto;
-	display: block;
+nav ul li{
+	border-left: solid 4px transparent;
+	padding: 1px 0;
+
 }
+
+nav ul li:hover{
+	border-left: solid 4px $highlight-green;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+
+.nav-icon{
+	width: 30px;
+	margin: 20px auto;
+	display: block;
+	opacity: 0.5;
+}
+.nav-icon:hover{
+	opacity: 1;
+}
+
+// Panel 
+
+.dash--panel{
+	
+	margin: 30px;
+}
+.dash--title{
+	font-weight: $font-thin;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+
+
+// Social
+
+.social--panel{
+	border: solid 1px grey;
+	border-radius: 5px;
+	width: 30%;
+	height: 8em;
+
+}
+
+.social--panel__container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
 
 
 
 .dashboard{
 	flex-grow: 2;
 	height: 100%;
+	background-color: white;
 }
+
+
+
+
 
 
 

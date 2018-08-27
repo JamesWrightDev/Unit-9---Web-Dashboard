@@ -7,7 +7,8 @@
 html, body {
   margin: 0;
   height: 100%;
-  overflow: auto; }
+  overflow: auto;
+  background-color: #4D4C72; }
 
 .container {
   display: flex;
@@ -21,8 +22,7 @@ html, body {
 
 .col--12 {
   width: 100%;
-  border-bottom: solid 1px #a6a6a6;
-  height: 200px; }
+  border-bottom: solid 1px #a6a6a6; }
 
 .col--6 {
   width: 100%;
@@ -35,9 +35,35 @@ html, body {
     width: 49.5%; } }
 
 .header {
-  height: 100px;
+  min-height: 80px;
   width: 100%;
-  background-color: #7477BF; }
+  background-color: #7477BF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+.profile-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.profile-menu p {
+  color: white;
+  font-weight: 300; }
+
+.profile-menu {
+  marign: 0 15px; }
+
+.header-notification {
+  width: 25px;
+  margin: 0 20px;
+  padding-right: 10px;
+  border-right: 1px solid black; }
+
+.img-avatar {
+  width: 40px;
+  border-radius: 50%; }
 
 .dashboard-wrapper {
   display: flex;
@@ -47,7 +73,6 @@ html, body {
   display: flex;
   flex-directon: column;
   width: 75px;
-  height: 1200px;
   background-color: #4D4C72;
   overflow: hidden;
   justify-content: center; }
@@ -58,13 +83,47 @@ nav {
 ul {
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+  margin-top: 10px; }
 
-.small-icon {
+nav ul li {
+  border-left: solid 4px transparent;
+  padding: 1px 0; }
+
+nav ul li:hover {
+  border-left: solid 4px #88D883;
+  border-radius: 3px;
+  cursor: pointer; }
+
+.nav-icon {
   width: 30px;
-  margin: 40px auto;
-  display: block; }
+  margin: 20px auto;
+  display: block;
+  opacity: 0.5; }
+
+.nav-icon:hover {
+  opacity: 1; }
+
+.dash--panel {
+  margin: 30px; }
+
+.dash--title {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 16px; }
+
+.social--panel {
+  border: solid 1px grey;
+  border-radius: 5px;
+  width: 30%;
+  height: 8em; }
+
+.social--panel__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
 
 .dashboard {
   flex-grow: 2;
-  height: 100%; }
+  height: 100%;
+  background-color: white; }

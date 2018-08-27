@@ -1,61 +1,108 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
 	<title>Web Dashboard</title>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-
 	<div class="container">
-		
-
-			<header class="header">
-				<div class="logo">YourApp</div>
-				<div class="notification"></div>
-				<div class="profile"></div>
-			</header>
-		
-			<div class="dashboard-wrapper">
-				<div class="nav-bar">
-					<nav>
-						<ul>
-							<li><img class="small-icon"src="icons/icon-dashboard.svg" alt=""></li>
-							<li><img class="small-icon"src="icons/icon-members.svg" alt=""></li>
-							<li><img class="small-icon"src="icons/icon-visits.svg" alt=""></li>
-							<li><img class="small-icon"src="icons/icon-settings.svg" alt=""></li>
-						</ul>
-					</nav>
+		<header class="header">
+			<div class="logo">
+				YourApp
+			</div>
+			<!-- Profile Menu -->
+			<div class="profile-menu">
+				<div class="notification">
+					<img alt="" class="header-notification" src="icons/icon-bell.svg">
 				</div>
-				<div class="dashboard">
-					<h1>Dashboard</h1>
-					<div class="grid-row">
-						<div class='col--12 dash--traffic'>Traffic</div>
-					</div>
-					<div class="grid-row">
-						<div class='col--6 dash--dailytraffic'>Daily</div>
-						<div class='col--6 dash--mobileuserss'>Mobile</div>
-					</div>
-					<div class="grid-row">
-						<div class='col--12 dash--socialstats'>Social</div>
-					</div>
-					<div class="grid-row">
-						<div class="col--6">New Members</div>
-						<div class="col--6">Recent Activity</div>
-					</div>
-						<div class="grid-row">
-						<div class="col--6">Message User</div>
-						<div class="col--6">Settings</div>
-					</div>
+				<div class="profile">
+					<img class="img-avatar"src="images/member-4.jpg" alt="">
 
+				</div>
+				<p>James Wright</p>
+			</div>
+		</header>
 
-				</div></div>
+		<!-- Dashboard Wrapper -->
+		<div class="dashboard-wrapper">
+			<div class="nav-bar">
+				<nav>
+					<ul>
+						<li><img alt="" class="nav-icon" src="icons/icon-dashboard.svg"></li>
+						<li><img alt="" class="nav-icon" src="icons/icon-members.svg"></li>
+						<li><img alt="" class="nav-icon" src="icons/icon-visits.svg"></li>
+						<li><img alt="" class="nav-icon" src="icons/icon-settings.svg"></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="dashboard">
+				<h1>Dashboard</h1>
+				<div class="grid-row">
+					<div class='col--12 dash--traffic'>
+						<div class="dash--panel">
+							<h3 class="dash--title">Traffic</h3>
+						</div>
+					</div>
+				</div>
+				<div class="grid-row">
+					<div class='col--6 dash--dailytraffic'>
+						<div class="dash--panel">
+							<h3 class="dash--title">Daily</h3>
+						</div>
+					</div>
+					<div class='col--6 dash--mobileuserss'>
+						<div class="dash--panel">
+							<h3 class="dash--title">Mobile</h3>
+						</div>
+					</div>
+				</div>
+				<div class="grid-row">
+					<div class='col--12 dash--socialstats'>
+						<div class="dash--panel">
+							<h3 class="dash--title">Social</h3>
+							<div class="social--panel__container">
+								<div class="social--panel"></div>
+								<div class="social--panel"></div>
+								<div class="social--panel"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="grid-row">
+					<div class="col--6">
+						<div class="dash--panel">
+							<h3 class="dash--title">New Members</h3>
+						</div>
+					</div>
+					<div class="col--6">
+						<div class="dash--panel">
+							<h3 class="dash--title">Recent Activity</h3>
+						</div>
+					</div>
+				</div>
+				<div class="grid-row">
+					<div class="col--6">
+						<div class="dash--panel">
+							<h3 class="dash--title">Message User</h3>
+						</div>
+					</div>
+					<div class="col--6">
+						<div class="dash--panel">
+							<h3 class="dash--title">Settings</h3>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
-	<script src='app.js'></script>
-
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js">
+	</script> 
+	<script src='app.js'>
+	</script> 
+	<script>
+	document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+	</script>
 </body>
 </html>
